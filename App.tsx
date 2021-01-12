@@ -1,23 +1,16 @@
 // PLUGINS IMPORTS //
 import React from "react"
-import { SafeAreaView, StyleSheet } from "react-native"
-import { NavigationContainer } from "@react-navigation/native"
+import { StyleSheet } from "react-native"
 
 // COMPONENTS IMPORTS //
-import Index from "./src/CandleGraph"
+import Navigator from "./src/navigator"
 
 // EXTRA IMPORTS //
 
 /////////////////////////////////////////////////////////////////////////////
 
 const App = () => {
-  return (
-    // <NavigationContainer>
-    // <SafeAreaView style={styles.wrapper}>
-    <Index />
-    // </SafeAreaView>
-    // </NavigationContainer>
-  )
+  return <Navigator />
 }
 
 const styles = StyleSheet.create({

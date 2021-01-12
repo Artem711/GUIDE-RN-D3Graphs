@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native"
-import bSplineInterpolation from "../../lib/interpolations/bSplineInterpolation.js"
+import bSplineInterpolation from "./lib/interpolations/bSplineInterpolation.js"
 import { data1, data2 } from "./data"
 import {
   ChartDot,
@@ -16,7 +16,7 @@ import {
   ChartYLabel,
   monotoneCubicInterpolation,
   simplifyData,
-} from "../../lib"
+} from "./lib"
 
 export const { width: SIZE } = Dimensions.get("window")
 
