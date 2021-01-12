@@ -20,7 +20,7 @@ import {
 
 export const { width: SIZE } = Dimensions.get("window")
 
-export const formatUSD = (value) => {
+export const formatUSD = (value: number | string) => {
   "worklet"
   if (value === "") {
     return ""
@@ -30,12 +30,12 @@ export const formatUSD = (value) => {
   })}`
 }
 
-export const formatDatetime = (value) => {
+export const formatDatetime = (value: string | number) => {
   "worklet"
   if (value === "") {
     return ""
   }
-  const date = new Date(Number(value * 1000))
+  const date = new Date(Number(Number(value) * 1000))
   const s = date.getSeconds()
   const m = date.getMinutes()
   const h = date.getHours()
