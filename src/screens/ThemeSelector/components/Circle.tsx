@@ -7,6 +7,7 @@ import Animated, {
   useAnimatedStyle,
   interpolate,
   Extrapolate,
+  runOnJS,
 } from "react-native-reanimated"
 import {
   TapGestureHandler,
@@ -67,7 +68,7 @@ export default function Circle({
   const onGestureEvent = useAnimatedGestureHandler<TapGestureHandlerGestureEvent>(
     {
       onActive: ({ absoluteX: x, absoluteY: y }) => {
-        restProps.onPress({ x, y })
+        runOnJS(restProps.onPress)({ x, y })
       },
     }
   )

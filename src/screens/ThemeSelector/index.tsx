@@ -6,6 +6,7 @@ import {
   PanGestureHandlerGestureEvent,
 } from "react-native-gesture-handler"
 import Animated, {
+  runOnJS,
   useAnimatedGestureHandler,
   useSharedValue,
   withSpring,
@@ -55,7 +56,6 @@ export default function ThemeSelector() {
             gradient={color}
             translateX={translateX}
             onPress={(position: IPosition) => {
-              "worklet"
               translateX.value = withSpring(-index * COLOR_WIDTH)
               setColorSelection({
                 position,
