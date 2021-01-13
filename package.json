@@ -11,6 +11,7 @@
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
+    "buffer": "^6.0.3",
     "d3": "^6.3.1",
     "d3-scale": "^3.2.3",
     "d3-shape": "^2.0.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@types/color": "^3.0.1",
     "@types/d3": "^6.2.0",
     "@types/d3-scale": "^3.2.2",
     "@types/d3-shape": "^2.0.0",

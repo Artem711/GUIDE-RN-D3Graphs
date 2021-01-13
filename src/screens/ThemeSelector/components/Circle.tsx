@@ -59,7 +59,7 @@ export default function Circle({
       Extrapolate.CLAMP
     )
 
-    const scale = interpolate(translateX.value, inputRange, [0.69, 1.19, 0.69])
+    const scale = interpolate(translateX.value, inputRange, [0.7, 1, 0.7])
     return {
       transform: [{ translateX: translateX.value }, { translateY }, { scale }],
     }

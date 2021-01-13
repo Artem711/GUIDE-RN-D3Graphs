@@ -1,6 +1,5 @@
 // PLUGINS IMPORTS //
-import { color } from "d3"
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import { View, StyleSheet, Dimensions } from "react-native"
 import Animated, {
   Easing,
@@ -46,6 +45,7 @@ export default function Background({
         height + colorSelection.position.y
       )) /
     2
+
   const style = useAnimatedStyle(() => ({
     left: -RADIUS + colorSelection.position.x,
     top: -RADIUS + colorSelection.position.y,
