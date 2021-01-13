@@ -1,6 +1,12 @@
 import { COLOR_WIDTH } from "../components/Circle"
 
-export const colors = [
+export interface IColor {
+  id: number
+  start: string
+  end: string
+}
+
+export const colors: Array<IColor> = [
   {
     id: 0,
     start: "#00E0D3",

@@ -15,14 +15,15 @@ import { snapPoint } from "react-native-redash"
 
 // COMPONENTS IMPORTS //
 import Circle, { IPosition, COLOR_WIDTH } from "./components/Circle"
-import { colors, snapPoints } from "./constants"
+import Background, { IColorSelection } from "./components/Background"
 
 // EXTRA IMPORTS //
+import { colors, snapPoints } from "./constants"
 
 /////////////////////////////////////////////////////////////////////////////
 
 export default function ThemeSelector() {
-  const [colorSelection, setColorSelection] = useState({
+  const [colorSelection, setColorSelection] = useState<IColorSelection>({
     previous: colors[0],
     current: colors[0],
     position: { x: 0, y: 0 },
@@ -48,6 +49,7 @@ export default function ThemeSelector() {
   return (
     <PanGestureHandler onGestureEvent={onGestureEvent}>
       <Animated.View style={styles.wrapper}>
+        <Background colorSelection={colorSelection} />
         <View style={styles.placeholder} />
         {colors.map((color, index) => (
           <Circle
