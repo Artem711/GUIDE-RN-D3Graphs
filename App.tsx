@@ -1,20 +1,19 @@
 // PLUGINS IMPORTS //
 import React from "react"
-import { StyleSheet } from "react-native"
 
 // COMPONENTS IMPORTS //
 import Navigator from "./src/navigator"
+import ThemeSelector from "./src/screens/ThemeSelector"
 
 // EXTRA IMPORTS //
 
 /////////////////////////////////////////////////////////////////////////////
 
-const App = () => {
-  return <Navigator />
+export default function App() {
+  return (
+    <>
+      <ThemeSelector />
+      {/* <Navigator /> */}
+    </>
+  )
 }
-
-const styles = StyleSheet.create({
-  wrapper: { flex: 1 },
-})
-
-export default App

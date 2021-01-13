@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 
 // COMPONENTS IMPORTS //
-import Menu from "./menu"
+import Menu from "./Menu"
 import CandleGraph from "./screens/CandleGraph"
 import LineGraph from "./screens/LineGraph"
 import GraphLib from "./screens/GraphsLib"

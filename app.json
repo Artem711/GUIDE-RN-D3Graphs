@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "D3",
-    "slug": "D3",
+    "name": "RNAnimations",
+    "slug": "RNAnimations",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
